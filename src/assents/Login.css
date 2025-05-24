@@ -1,0 +1,181 @@
+@font-face {
+  font-family: 'Exile-Regular';
+  src: url('./Exile-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.form{
+  display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+    background: rgba(255, 255, 255, 0.164);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(50%);
+    padding: 2rem;
+  border-radius: 8px;
+  width: 320px;}
+  .form-tittle p{
+         font-family: 'Exile-Regular', sans-serif;
+        font-size:  3rem;
+        width: 100%;
+        color: #ffb7c5;
+        margin: 0 0 1rem 0;
+    }
+  .form-moon{
+  font-size: 4rem; /* Tamaño del emoji */
+  animation: moonGlow 2s ease-in-out infinite;
+  text-shadow: 0 0 10px rgba(255, 230, 150, 0.4),
+               0 0 20px rgba(255, 230, 150, 0.5),
+               0 0 30px rgba(255, 230, 150, 0.6);
+        }
+  .form-control{
+        background-color: rgba(255, 255, 255, 0);
+        border-color: white;
+        border-radius: 5px;
+        height: 1.5rem;
+        margin: 0.5rem;
+    }
+    
+@keyframes moonGlow {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(255, 230, 150, 0.4),
+                 0 0 20px rgba(255, 230, 150, 0.5),
+                 0 0 30px rgba(255, 230, 150, 0.6);
+    transform: scale(1);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 230, 150, 0.6),
+                 0 0 30px rgba(255, 230, 150, 0.7),
+                 0 0 40px rgba(255, 230, 150, 0.8);
+    transform: scale(1.05);
+  }
+} 
+
+
+.form video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.form-group {
+  margin-bottom: 1rem;
+  width: 90%;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #fffdfd00;
+  border: 1px solid white;
+  border-radius: 4px;
+  color: white;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+
+.form-options {
+     display: flex
+;
+    align-items: center;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    color: white;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.checkbox input {
+  margin-right: 0.5rem;
+  
+}
+
+.forgot {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+}
+
+.sign-in-button {
+  width: 100%;
+  padding: 0.6rem;
+  background-color: #3b82f6;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sign-in-button:hover {
+  background-color: #2563eb;
+}
+
+.register {
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.register a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+.register a:hover {
+  text-decoration: underline;
+}
+
+.social-login {
+  text-align: center;
+  margin: 1rem 0 1rem 0;
+  font-size: 0.85rem;
+  color: #ffffff;
+}
+
+.social-icons {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-icons i {
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.social-icons i:hover {
+  color: #60a5fa
+}

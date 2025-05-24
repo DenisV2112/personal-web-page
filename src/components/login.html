@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./App.css">
+</head>
+<body>
+  
+  <form>
+  <div className="form">
+  <video autoPlay loop muted src={background}>
+  </video>
+  <div className="form-tittle">
+    <div className='form-moon'>🌕</div>
+    <p>Login</p>
+    
+  </div>
+        <div className="form-group">
+          <input type="email" id="email" placeholder="Email address" />
+        </div>
+
+        <div className="form-group">
+          <input type="password" id="password" placeholder="Password" />
+        </div>
+
+        <div className="form-options">
+          <label className="checkbox">
+            <input type="checkbox" defaultChecked />
+            Remember me
+          </label>
+          <a href="#" className="forgot">Forgot password?</a>
+        </div>
+
+        <button type="submit" className="sign-in-button">SIGN IN</button>
+
+        <div className="register">
+          Not a member? <a href="#">Register</a>
+        </div>
+
+        <div className="social-login">
+          <span>or sign up with:</span>
+          <div className="social-icons">
+            <i className="fab fa-facebook-f"><TbBrandFacebookFilled /></i>
+            <i className="fab fa-google"><FaGoogle /></i>
+            <i className="fab fa-twitter"><FaXTwitter /></i>
+            <i className="fab fa-github"><FaGithub /></i>
+          </div>
+        </div>
+    </div>
+</form>
+
+</body>
+</html>

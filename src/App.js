@@ -1,21 +1,27 @@
-import background from './background_fire.mp4';
 
-import './App.css';
+import './App.scss';
+// Components
+import InProgress from './components/InProgress.js';
+// Dependencies
+import { Routes, Route, Link } from 'react-router-dom';
+import PortapholioCard from './components/portapholio/PortapholioCard.js';
+
+
+
 
 function App() {
-  return (
+
+  return (<>
     <div className="App">
-        <video src={background} autoPlay loop />
-        <div className='App_text-container'>
-          <div className='moon'>🌕</div>
-          <h1>
-          Good Night World...
-        </h1>
-        <p>
-           This App is in Process.
-        </p>
-        </div>
+        <Routes>
+        <Route path="/" element={<InProgress />} />
+        <Route path="/card" element={<PortapholioCard />} />
+        <Route path="/contact" element={""} />
+        <Route path="/menu" element={""} />
+      </Routes>
     </div>
+    
+    </>
   );
 }
 
